@@ -55,6 +55,23 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+<!--		https://mvnrepository.com/artifact/org.webjars/bootstrap/5.2.2-->
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>bootstrap</artifactId>
+			<version>5.2.2</version>
+		</dependency>
+
+
+		<!--		https://mvnrepository.com/artifact/org.webjars.npm/bootstrap-icons/1.10.2-->
+		<dependency>
+			<groupId>org.webjars.npm</groupId>
+			<artifactId>bootstrap-icons</artifactId>
+			<version>1.10.2</version>
+		</dependency>
+
+
 	</dependencies>
 
 	<build>
@@ -62,6 +79,7 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<version>${project.parent.version}</version>
 				<configuration>
 					<excludes>
 						<exclude>

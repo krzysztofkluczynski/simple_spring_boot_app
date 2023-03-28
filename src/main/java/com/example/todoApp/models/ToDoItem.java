@@ -20,6 +20,7 @@ import java.time.Instant;
 public class ToDoItem implements Serializable {
 
     @Id
+    @jakarta.persistence.Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
